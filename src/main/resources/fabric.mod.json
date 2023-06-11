@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.juicey.jtweaks.ExampleMod"
+          "com.juicey.jtweaks.JTweaks"
 		],
 		"client": [
 			"com.juicey.jtweaks.ExampleModClient"
 		],
 		"fabric-datagen": [
-			"com.juicey.jtweaks.ExampleModDataGenerator"
+			"com.juicey.jtweaks.JTweaksDataGenerator"
 		]
 	},
 	"mixins": [
