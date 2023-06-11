@@ -1,5 +1,6 @@
 package com.juicey.jtweaks;
 
+import com.juicey.jtweaks.item.ModItemGroup;
 import com.juicey.jtweaks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,5 +18,6 @@ public class JTweaks implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello from JuiceyTweaks! Beginning initialisation (beep boop boop beep)");
 		ModItems.registerModItems();
+		ModItemGroup.registerItemGroups();
 	}
 }
