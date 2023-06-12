@@ -3,9 +3,9 @@
 	"id": "jtweaks",
 	"version": "${version}",
 	"name": "JuiceyTweaks",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Overhauling the Trails and Tales update!",
 	"authors": [
-		"Me!"
+		"JuiceyBeans"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
