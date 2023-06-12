@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "CEC",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "S": {
+      "item": "minecraft:sentry_armor_trim_smithing_template"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "B": {
+      "item": "jtweaks:blank_smithing_template"
+    }
+  },
+  "result": {
+    "item": "minecraft:sentry_armor_trim_smithing_template",
+    "count": 2
+  }
+}
