@@ -2,25 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "CSC",
-    "CcC",
+    "CPC",
     "CBC"
   ],
   "key": {
     "C": {
-      "item": "minecraft:terracotta"
+      "item": "minecraft:purpur_block"
     },
     "S": {
-      "item": "minecraft:wayfinder_armor_trim_smithing_template"
-    },
-    "c": {
-      "item": "minecraft:copper_ingot"
+      "item": "minecraft:spire_armor_trim_smithing_template"
+
     },
     "B": {
       "item": "jtweaks:blank_smithing_template"
+    },
+    "P": {
+      "item": "minecraft:shulker_shell"
     }
   },
   "result": {
-    "item": "minecraft:wayfinder_armor_trim_smithing_template",
+    "item": "minecraft:spire_armor_trim_smithing_template",
     "count": 2
   }
 }

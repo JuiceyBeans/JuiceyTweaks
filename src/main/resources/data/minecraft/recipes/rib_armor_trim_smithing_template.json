@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "C C",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:nether_bricks"
+    },
+    "S": {
+      "item": "minecraft:rib_armor_trim_smithing_template"
+
+    },
+    "B": {
+      "item": "jtweaks:blank_smithing_template"
+    }
+  },
+  "result": {
+    "item": "minecraft:rib_armor_trim_smithing_template",
+    "count": 2
+  }
+}
