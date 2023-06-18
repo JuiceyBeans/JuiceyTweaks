@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SDS",
+    "S S",
+    "SBS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sandstone"
+    },
+    "D": {
+      "item": "minecraft:dune_armor_trim_smithing_template"
+    },
+    "B": {
+      "item": "jtweaks:blank_smithing_template"
+    }
+  },
+  "result": {
+    "item": "minecraft:dune_armor_trim_smithing_template",
+    "count": 2
+  }
+}

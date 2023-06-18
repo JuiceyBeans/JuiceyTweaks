@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.juicey.jtweaks.mixin",
+	"package": "com.juicey.jtweaks.mixin.client",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-      "TorchflowerGlow"
+	"client": [
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

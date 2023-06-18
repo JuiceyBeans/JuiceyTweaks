@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "KKK",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "S": {
+      "item": "minecraft:coast_armor_trim_smithing_template"
+    },
+    "K": {
+      "item": "minecraft:kelp"
+    },
+    "B": {
+      "item": "jtweaks:blank_smithing_template"
+    }
+  },
+  "result": {
+    "item": "minecraft:coast_armor_trim_smithing_template",
+    "count": 2
+  }
+}
