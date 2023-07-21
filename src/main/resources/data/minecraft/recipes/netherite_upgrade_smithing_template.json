@@ -10,12 +10,15 @@
     },
     "S": {
       "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "D": {
+      "item": "minecraft:diamond"
     }
   },
   "pattern": [
     "#S#",
-    "#C#",
-    "###"
+    "DCD",
+    "#D#"
   ],
   "result": {
     "count": 2,
