@@ -3,7 +3,6 @@
 	"package": "com.juicey.jtweaks.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "TorchflowerGlow"
 	],
 	"injectors": {
 		"defaultRequire": 1
