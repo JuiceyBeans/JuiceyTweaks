@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "CIC",
-    "IGI",
-    "CIC"
+    "CAC",
+    "AGA",
+    "CAC"
   ],
   "key": {
     "C": {
       "item": "minecraft:copper_ingot"
     },
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "A": {
+      "item": "minecraft:amethyst"
     },
     "G": {
       "item": "minecraft:gold_ingot"
