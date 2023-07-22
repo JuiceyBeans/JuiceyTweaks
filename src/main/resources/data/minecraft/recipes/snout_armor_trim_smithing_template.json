@@ -10,7 +10,7 @@
       "item": "minecraft:blackstone"
     },
     "S": {
-      "item": "minecraft:rib_armor_trim_smithing_template"
+      "item": "minecraft:snout_armor_trim_smithing_template"
 
     },
     "B": {
@@ -21,7 +21,8 @@
     }
   },
   "result": {
-    "item": "minecraft:rib_armor_trim_smithing_template",
+    "item": "minecraft:snout_armor_trim_smithing_template",
     "count": 2
   }
+
 }
