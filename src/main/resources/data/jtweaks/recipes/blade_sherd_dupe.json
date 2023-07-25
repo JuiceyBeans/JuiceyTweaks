@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:blade_pottery_sherd"
+    },
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "item": "minecraft:brick"
+    }
+  ],
+  "result": {
+    "item": "minecraft:/home/user/IdeaProjects/JuiceyTweaks/src/main/resources/data/jtweaks/recipes/blade_sherd_dupe.json_pottery_sherd",
+    "count": 2
+  }
+}
