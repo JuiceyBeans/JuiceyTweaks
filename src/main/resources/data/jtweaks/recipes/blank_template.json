@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "CAC",
-    "AGA",
-    "CAC"
+    " A ",
+    "ADA",
+    " A "
   ],
   "key": {
-    "C": {
-      "item": "minecraft:copper_ingot"
-    },
     "A": {
       "item": "minecraft:amethyst_shard"
     },
-    "G": {
-      "item": "minecraft:gold_ingot"
+    "D": {
+      "item": "minecraft:diamond"
     }
   },
   "result": {
