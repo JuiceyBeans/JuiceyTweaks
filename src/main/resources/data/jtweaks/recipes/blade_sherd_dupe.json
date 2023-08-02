@@ -18,7 +18,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:/home/user/IdeaProjects/JuiceyTweaks/src/main/resources/data/jtweaks/recipes/blade_sherd_dupe.json_pottery_sherd",
+    "item": "minecraft:blade_pottery_sherd",
     "count": 2
   }
 }
