@@ -1,0 +1,1 @@
+effect give @a[tag=on_path] minecraft:speed 1 1 true
