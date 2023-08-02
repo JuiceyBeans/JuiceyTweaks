@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "CSC",
-    "CPC",
+    "C C",
     "CBC"
   ],
   "key": {
@@ -15,9 +15,6 @@
     },
     "B": {
       "item": "jtweaks:blank_smithing_template"
-    },
-    "P": {
-      "item": "minecraft:shulker_shell"
     }
   },
   "result": {
