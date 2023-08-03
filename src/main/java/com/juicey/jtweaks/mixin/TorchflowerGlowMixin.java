@@ -1,9 +1,7 @@
 package com.juicey.jtweaks.mixin;
 
 import net.minecraft.block.*;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
@@ -13,8 +11,6 @@ import static net.minecraft.block.Blocks.TORCHFLOWER;
 
 @Mixin(Blocks.class)
 public class TorchflowerGlowMixin {
-
-    @Shadow @Final public static Block TORCHFLOWER_CROP;
 
     //Torchflowers have a light level of 15
     @ModifyArg(
