@@ -3,7 +3,6 @@ package com.juicey.jtweaks;
 import com.juicey.jtweaks.item.ModItemGroup;
 import com.juicey.jtweaks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
