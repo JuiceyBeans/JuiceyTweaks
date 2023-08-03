@@ -13,8 +13,7 @@ __What this mod currently does:__
 - Pottery sherds can be duplicated using 4 bricks
 
 <h3>Mod Showcase</h3>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2fiHofDDbQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<a href="https://www.youtube.com/watch?v=2fiHofDDbQw"><img src="https://i.imgur.com/bEFcA63.jpg" title="source: imgur.com" /></a>
 
 <h3>Socials</h3>
 <img alt="Static Badge" src="https://img.shields.io/badge/GitHub-JuiceyBeans-purple?style=social&logo=github&logoColor=black&label=GitHub&labelColor=white&link=https%3A%2F %2Fgithub.com%2FJuiceyBeans%2FJuiceyTweaks"><img alt="Static Badge" src="https://img.shields.io/badge/Discord-juiceybeans-purple?style=social&logo=discord&logoColor=black">
