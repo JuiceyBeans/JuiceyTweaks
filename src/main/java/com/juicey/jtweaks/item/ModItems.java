@@ -20,8 +20,12 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.INGREDIENTS, BLANK_SMITHING_TEMPLATE);
+        //For future reference:
+        //addToItemGroup(ItemGroups.[item group], [mod item]);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.addAfter(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.BLANK_SMITHING_TEMPLATE));
     }
+
     public static void addToItemGroup(RegistryKey<ItemGroup> group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
