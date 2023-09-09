@@ -1,5 +1,5 @@
 <h1>Juicey's Tweaks</h1>
-<h3>Changes to Vanilla Minecraft for a more cohesive experience</h3>
+<h3>Glowing torchflowers, balanced trim recipes, better piglin brute loot, and more!</h3>
 
 <img alt="Static Badge" src="https://img.shields.io/badge/Requires-Fabric%20API-purple?style=flat-square&labelColor=white">  |  <img alt="Static Badge" src="https://img.shields.io/badge/Minecraft%20Versions-1.20.1-purple?style=flat-square&labelColor=white">  |  <img alt="Static Badge" src="https://img.shields.io/badge/License-MIT-purple?style=flat-square&labelColor=white">
 
