@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 
 @Mixin(SnowballEntity.class)
-public abstract class SnowballFreezingMixin {
+public class SnowballFreezingMixin {
 
     /* Used to make snowballs do damage to all mobs, not what I want but might be useful for future reference
     @ModifyConstant(
