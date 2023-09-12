@@ -4,9 +4,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "TorchflowerGlowMixin",
-    "SnowballFreezingMixin",
-    "PitcherMaxAgeMixin",
-    "PitcherPlantShearMixin"
+    "SnowballFreezingMixin"
   ],
   "injectors": {
     "defaultRequire": 1

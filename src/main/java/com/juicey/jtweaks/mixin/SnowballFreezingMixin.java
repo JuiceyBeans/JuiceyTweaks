@@ -17,7 +17,7 @@ public abstract class SnowballFreezingMixin extends Entity {
         super(type, world);
     }
 
-    /* Used to make snowballs do 1HP damage to all mobs, not what I want but might be useful for future reference
+    /* Used to make snowballs do damage to all mobs, not what I want but might be useful for future reference
     @ModifyConstant(
             method = "onEntityHit",
             constant = @Constant(intValue = 0)
