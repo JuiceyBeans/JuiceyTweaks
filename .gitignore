@@ -16,6 +16,8 @@ classes/
 *.ipr
 *.iws
 production/
+production/JuiceyTweaks.client/
+production/JuiceyTweaks.main/
 run/
 
 # vscode
