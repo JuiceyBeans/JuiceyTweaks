@@ -7,7 +7,7 @@
         {
           "type": "item",
           "weight": 10,
-          "name": "jtweaks:blank_smithing_template",
+          "name": "juiceytweaks:blank_smithing_template",
           "functions": [
             {
               "function": "set_count",

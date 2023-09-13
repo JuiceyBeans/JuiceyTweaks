@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "jtweaks",
+	"id": "juiceytweaks",
 	"version": "${version}",
 	"name": "Juicey's Tweaks",
 	"description": "Glowing torchflowers, balanced trim recipes, better piglin brute loot, and more!",
@@ -12,23 +12,26 @@
 		"sources": "https://github.com/JuiceyBeans/JuiceyTweaks"
 	},
 	"license": "MIT",
-	"icon": "assets/jtweaks/icon.png",
+	"icon": "assets/juiceytweaks/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "com.juicey.jtweaks.JTweaks"
+			"com.juicey.juiceytweaks.Main"
 		],
 		"client": [
-			"com.juicey.jtweaks.ExampleModClient"
+			"com.juicey.juiceytweaks.ExampleModClient"
 		],
 		"fabric-datagen": [
-			"com.juicey.jtweaks.JTweaksDataGenerator"
+			"com.juicey.juiceytweaks.DataGenerator"
+		],
+		"preLaunch": [
+			"com.juicey.juiceytweaks.PreLaunch"
 		]
 	},
 	"mixins": [
-		"jtweaks.mixins.json",
+		"juiceytweaks.mixins.json",
 		{
-			"config": "jtweaks.client.mixins.json",
+			"config": "juiceytweaks.client.mixins.json",
 			"environment": "client"
 		}
 	],

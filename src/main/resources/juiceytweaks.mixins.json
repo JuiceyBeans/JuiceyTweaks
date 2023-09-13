@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.juicey.juiceytweaks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "com.juicey.juiceytweaks.mixin.MixinPlugin",
+  "mixins": [
+    "TorchflowerGlowMixin",
+    "SnowballFreezingMixin",
+    "FoodMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

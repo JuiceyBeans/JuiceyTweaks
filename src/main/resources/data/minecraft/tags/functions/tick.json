@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "jtweaks:path_check",
-    "jtweaks:path_speed"
+    "juiceytweaks:path_check",
+    "juiceytweaks:path_speed"
   ]
 }
