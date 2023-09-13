@@ -5,9 +5,11 @@
 
 
 __What this mod currently does:__
-- Rebalances armor trim and netherite upgrade duplication recipes
-- Torchflowers can emit light now
+- Torchflowers can emit light
+- Snowballs freeze mobs
 - Players walk faster on grass path blocks
+- Rebalances armor trim and netherite upgrade duplication recipes
+- Diamonds can smelt 128 items. Why? Idk lol
 - Lodestones use netherite scrap instead of a full netherite ingot
 - Piglin brutes may drop gold, Snout amor trim, a golden apple, or a netherite scrap as opposed to nothing
 - Pottery sherds can be duplicated using 4 bricks
