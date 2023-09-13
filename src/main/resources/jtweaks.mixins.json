@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "TorchflowerGlowMixin",
-    "SnowballFreezingMixin"
+    "SnowballFreezingMixin",
+    "CookieMixin"
   ],
   "injectors": {
     "defaultRequire": 1
