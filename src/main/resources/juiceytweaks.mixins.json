@@ -6,7 +6,13 @@
   "mixins": [
     "TorchflowerGlowMixin",
     "SnowballFreezingMixin",
-    "FoodMixin"
+    "FoodMixin",
+    "SculkMixin",
+    "SculkCatalystMixin",
+    "SculkSensorMixin",
+    "SculkShriekerMixin",
+    "SculkVeinMixin",
+    "SculkCalibratedMixin"
   ],
   "injectors": {
     "defaultRequire": 1
