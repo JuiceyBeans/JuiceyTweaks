@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
 	"id": "juiceytweaks",
-	"version": "${version}",
+	"version": "1.4.0",
 	"name": "Juicey's Tweaks",
-	"description": "Glowing torchflowers, balanced trim recipes, better piglin brute loot, and more!",
+	"description": "Glowing torchflowers, freezing snowballs, better trim recipes, and more!",
 	"authors": [
 		"JuiceyBeans"
 	],
@@ -16,16 +16,16 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.juicey.juiceytweaks.Main"
-		],
-		"client": [
-			"com.juicey.juiceytweaks.ExampleModClient"
+			"com.juicey.juiceytweaks.JuiceyTweaks"
 		],
 		"fabric-datagen": [
 			"com.juicey.juiceytweaks.DataGenerator"
 		],
 		"preLaunch": [
 			"com.juicey.juiceytweaks.PreLaunch"
+		],
+		"modmenu": [
+			"com.juicey.juiceytweaks.integration.ModMenuIntegration"
 		]
 	},
 	"mixins": [
@@ -39,9 +39,12 @@
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cloth-config": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"modmenu": "*",
+		"autoconfig1u": "*",
+		"visuality": "*"
 	}
 }
