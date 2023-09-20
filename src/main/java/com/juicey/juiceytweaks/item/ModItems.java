@@ -1,6 +1,6 @@
 package com.juicey.juiceytweaks.item;
 
-import com.juicey.juiceytweaks.Main;
+import com.juicey.juiceytweaks.JuiceyTweaks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -15,7 +15,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(Main.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, new Identifier(JuiceyTweaks.MOD_ID, name), item);
     }
     public static final Item BLANK_SMITHING_TEMPLATE = registerItem("blank_smithing_template", new Item(new FabricItemSettings()));
     public static final Item ELDER_SPIKE = registerItem("elder_spike", new Item(new FabricItemSettings()));
@@ -33,7 +33,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Main.LOGGER.info("Registering items from JuiceyTweaks!");
+        JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Registering items!");
         addItemsToItemGroup();
     }
 }
