@@ -6,7 +6,6 @@
   "mixins": [
     "TorchflowerGlowMixin",
     "SnowballFreezingMixin",
-    "FoodMixin",
     "SculkMixin",
     "SculkCatalystMixin",
     "SculkSensorMixin",
