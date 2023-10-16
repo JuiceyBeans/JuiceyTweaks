@@ -79,6 +79,11 @@ public class MixinPlugin implements IMixinConfigPlugin {
             return false;
         }
 
+        if(mixinClassName.equals("com.juicey.juiceytweaks.mixin.FoodMixin") && FabricLoader.getInstance().isModLoaded("cookies")) {
+            JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Alyx's Cookies was detected, disabled better cookies");
+            return false;
+        }
+
         return true;
     }
 
