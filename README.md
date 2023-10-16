@@ -15,8 +15,8 @@ __What this mod currently does:__
 - Piglin brutes may drop gold, Snout amor trim, a golden apple, or a netherite scrap as opposed to nothing
 - Pottery sherds can be duplicated using 4 bricks
 
-<h3>Mod Showcase</h3>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2fiHofDDbQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h3>Mod Showcase (Outdated)</h3>
+<a href="https://www.youtube.com/watch?v=2fiHofDDbQw"><img src="https://i.imgur.com/bEFcA63.jpg" title="source: imgur.com" /></a>
 
 
 <h3>Socials</h3>
