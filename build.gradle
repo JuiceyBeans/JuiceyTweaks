@@ -11,12 +11,10 @@ base {
 }
 
 repositories {
-	maven { url 'https://jitpack.io' } // MixinExtras
-	maven { url 'https://maven.shedaniel.me/' } // Cloth Config
-	maven { url 'https://maven.terraformersmc.com/releases/' } // Mod Menu
-	maven {
-		url = "https://api.modrinth.com/maven"
-	}
+	maven { url 'https://jitpack.io' }
+	maven { url 'https://maven.shedaniel.me/' }
+	maven { url 'https://maven.terraformersmc.com/releases/' }
+	maven { url 'https://api.modrinth.com/maven' }
 }
 
 loom {
