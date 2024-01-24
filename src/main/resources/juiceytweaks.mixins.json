@@ -11,7 +11,8 @@
     "SculkSensorMixin",
     "SculkShriekerMixin",
     "SculkVeinMixin",
-    "SculkCalibratedMixin"
+    "SculkCalibratedMixin",
+    "PowderSnowMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -4,11 +4,12 @@ import com.juicey.juiceytweaks.config.ModConfig;
 import com.juicey.juiceytweaks.item.ModItemGroup;
 import com.juicey.juiceytweaks.item.ModItems;
 import com.juicey.juiceytweaks.mixin.MixinPlugin;
-import com.juicey.juiceytweaks.mixin.SculkCalibratedMixin;
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Items;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
@@ -18,6 +19,12 @@ public class JuiceyTweaks implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("juiceytweaks");
 	public static final String MOD_ID = "juiceytweaks";
+
+	public static boolean powderSnowWalkCondition(Entity entity) {
+        if(EnchantmentHelper.getEquipmentLevel(Enchantments.FROST_WALKER, ((LivingEntity)entity)) > 0) {
+			return true;
+		} else return false;
+    };
 
 	@Override
 	public void onInitialize() {
