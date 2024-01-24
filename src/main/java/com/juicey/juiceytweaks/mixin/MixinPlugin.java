@@ -21,10 +21,6 @@ public class MixinPlugin implements IMixinConfigPlugin {
         return ModConfig.INSTANCE.enableTorchflower;
     }
 
-    private boolean enableCookieReworkMixin() {
-        return ModConfig.INSTANCE.enableCookieRework;
-    }
-
     private boolean enableFreezingSnowballsMixin() {
         return ModConfig.INSTANCE.enableFreezingSnowballs;
     }
@@ -60,30 +56,19 @@ public class MixinPlugin implements IMixinConfigPlugin {
 //        }
 
         if(mixinClassName.equals("com.juicey.juiceytweaks.mixin.TorchflowerGlowMixin") && FabricLoader.getInstance().isModLoaded("glowing-torchflower")) {
-            JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Glowing Torchflower was detected, disabled glowing torchflowers");
+            JuiceyTweaks.LOGGER.info("[Juicey's Tweaks] Glowing Torchflower was detected, disabled glowing torchflowers");
             return false;
         }
 
         if(mixinClassName.equals("com.juicey.juiceytweaks.mixin.TorchflowerGlowMixin") && (ModConfig.INSTANCE != null) && !ModConfig.INSTANCE.enableTorchflower) {
-            JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Disabled glowing torchflowers");
+            JuiceyTweaks.LOGGER.info("[Juicey's Tweaks] Disabled glowing torchflowers");
             return false;
         }
 
         if(mixinClassName.equals("com.juicey.juiceytweaks.mixin.SnowballFreezingMixin") && (ModConfig.INSTANCE != null) && !ModConfig.INSTANCE.enableFreezingSnowballs) {
-            JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Disabled freezing snowballs");
+            JuiceyTweaks.LOGGER.info("[Juicey's Tweaks] Disabled freezing snowballs");
             return false;
         }
-
-        if(mixinClassName.equals("com.juicey.juiceytweaks.mixin.FoodMixin") && (ModConfig.INSTANCE != null) && !ModConfig.INSTANCE.enableCookieRework) {
-            JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Disabled better cookies");
-            return false;
-        }
-
-        if(mixinClassName.equals("com.juicey.juiceytweaks.mixin.FoodMixin") && FabricLoader.getInstance().isModLoaded("cookies")) {
-            JuiceyTweaks.LOGGER.info("[JuiceyTweaks] Alyx's Cookies was detected, disabled better cookies");
-            return false;
-        }
-
         return true;
     }
 

@@ -21,7 +21,7 @@ public class JuiceyTweaks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("[JuiceyTweaks] Beginning initialisation (beep boop boop beep)");
+		LOGGER.info("[Juicey's Tweaks] Beginning initialisation (beep boop boop beep)");
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroups();
 		FuelRegistry.INSTANCE.add(Items.DIAMOND, 25600);
