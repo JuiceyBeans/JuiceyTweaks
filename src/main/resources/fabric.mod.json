@@ -23,11 +23,7 @@
 		]
 	},
 	"mixins": [
-		"juiceytweaks.mixins.json",
-		{
-			"config": "juiceytweaks.client.mixins.json",
-			"environment": "client"
-		}
+		"juiceytweaks.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
