@@ -21,9 +21,6 @@ public class ModConfig implements ConfigData {
     public boolean enableTorchflower = true;
 
     @ConfigEntry.Gui.Tooltip()
-    public boolean enableCookieRework = false;
-
-    @ConfigEntry.Gui.Tooltip()
     public boolean enableFreezingSnowballs = true;
 
     @ConfigEntry.Gui.Tooltip()
