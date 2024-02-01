@@ -4,6 +4,8 @@ import com.juicey.juiceytweaks.JuiceyTweaks;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.block.PowderSnowBlock;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,6 +21,12 @@ public class PowderSnowMixin {
             )
     )
     private static boolean allowFrostWalker(boolean original, Entity entity) {
-        return original || JuiceyTweaks.powderSnowWalkCondition(entity);
+        return original || powderSnowWalkCondition(entity);
     }
+
+    private static boolean powderSnowWalkCondition(Entity entity) {
+        if(EnchantmentHelper.getEquipmentLevel(Enchantments.FROST_WALKER, ((LivingEntity)entity)) > 0) {
+            return true;
+        } else return false;
+    };
 }
