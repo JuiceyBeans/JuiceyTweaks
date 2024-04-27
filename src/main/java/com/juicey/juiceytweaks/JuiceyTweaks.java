@@ -1,15 +1,9 @@
 package com.juicey.juiceytweaks;
 
-import com.juicey.juiceytweaks.config.ModConfig;
 import com.juicey.juiceytweaks.item.ModItemGroup;
 import com.juicey.juiceytweaks.item.ModItems;
-import com.juicey.juiceytweaks.mixin.MixinPlugin;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Items;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
@@ -18,7 +12,7 @@ import org.slf4j.LoggerFactory;
 public class JuiceyTweaks implements ModInitializer {
 
 	// Hello!
-	// If you're reading my code for some reason, please keep in mind that I'm a psych student who makes Minecraft mods as a hobby lol
+	// If you're reading my code for some reason, please keep in mind that I make Minecraft mods as a hobby lol
 	// These mods are mainly made for me and my friends first, public distribution comes second
 	// So a lot of the code here is probably WILDLY unoptimized or just plain stupid
 	// Juicey's Tweaks is my first mod so a lot of things are going to be wonky!
@@ -36,8 +30,6 @@ public class JuiceyTweaks implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroups();
 		FuelRegistry.INSTANCE.add(Items.DIAMOND, 25600);
-		ModConfig.init();
-		MixinPlugin.init();
 	}
 
 	public static void addVisualitySparkle(World world, double x, double y, double z) {

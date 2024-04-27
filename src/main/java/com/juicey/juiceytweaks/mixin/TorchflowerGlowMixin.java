@@ -57,19 +57,19 @@ public class TorchflowerGlowMixin {
     }
 
    //Torchflowers in pots have a light level of 13
-    @ModifyVariable(
-            method = "createFlowerPotBlock(Lnet/minecraft/block/Block;[Lnet/minecraft/resource/featuretoggle/FeatureFlag;)Lnet/minecraft/block/FlowerPotBlock;",
-            at = @At(
-                    value = "STORE",
-                    target = "Lnet/minecraft/block/FlowerPotBlock;<init>(Lnet/minecraft/block/Block;Lnet/minecraft/block/AbstractBlock$Settings;)V",
-                    ordinal = 0
-            )
-    )
-
-    private static Block.Settings alterTorchflowerPotSettings(AbstractBlock.Settings settings, Block flower) {
-        if (flower == TORCHFLOWER) {
-            return settings.luminance(state -> 13);
-        };
-        return settings;
-    }
+//    @ModifyVariable(
+//            method = "Lnet/minecraft/block/Blocks;createFlowerPotBlock(Lnet/minecraft/block/Block;[Lnet/minecraft/resource/featuretoggle/FeatureFlag;)Lnet/minecraft/block/FlowerPotBlock;",
+//            at = @At(
+//                    value = "STORE",
+//                    target =    "Lnet/minecraft/block/FlowerPotBlock;<init>(Lnet/minecraft/block/Block;Lnet/minecraft/block/AbstractBlock$Settings;)V",
+//                    ordinal = 0
+//            )
+//    )
+//
+//    private static Block.Settings alterTorchflowerPotSettings(AbstractBlock.Settings settings, Block flower) {
+//        if (flower == TORCHFLOWER) {
+//            return settings.luminance(state -> 13);
+//        };
+//        return settings;
+//    }
 }

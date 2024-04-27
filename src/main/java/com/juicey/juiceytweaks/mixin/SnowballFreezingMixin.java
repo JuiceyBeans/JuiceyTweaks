@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-
 @Mixin(SnowballEntity.class)
 public abstract class SnowballFreezingMixin extends Entity {
     public SnowballFreezingMixin(EntityType<?> type, World world) {
@@ -32,7 +31,7 @@ public abstract class SnowballFreezingMixin extends Entity {
         entity.setFrozenTicks(300); //Gives freezing to the entity
         //Extinguishes the entity if it is on fire
         if (entity.wasOnFire) {
-            entity.playSound(SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE, 0.7F, 1.6F + (this.random.nextFloat() - this.random.nextFloat()) * 0.4F);;
+            entity.playSound(SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE, 0.7F, 1.6F + (this.random.nextFloat() - this.random.nextFloat()) * 0.4F);
         }
         if (entity.isOnFire()) {
             entity.extinguishWithSound();

@@ -19,6 +19,7 @@ public class ModItems {
     }
     public static final Item BLANK_SMITHING_TEMPLATE = registerItem("blank_smithing_template", new Item(new FabricItemSettings()));
     public static final Item ELDER_SPIKE = registerItem("elder_spike", new Item(new FabricItemSettings()));
+    public static final Item DEBUG_ITEM = registerItem("debug_item", new DebugItem(new FabricItemSettings()));
 
     public static void addItemsToItemGroup() {
         //For future reference:
@@ -26,6 +27,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.addAfter(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.BLANK_SMITHING_TEMPLATE));
         addToItemGroup(ItemGroups.INGREDIENTS, ELDER_SPIKE);
+        addToItemGroup(ItemGroups.OPERATOR, DEBUG_ITEM);
     }
 
     public static void addToItemGroup(RegistryKey<ItemGroup> group, Item item) {
