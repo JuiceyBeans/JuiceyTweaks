@@ -1,5 +1,6 @@
-package com.juicey.juiceytweaks.mixin;
+package com.juiceybeans.juiceytweaks.mixin;
 
+import com.juiceybeans.juiceytweaks.config.ModConfig;
 import net.minecraft.block.*;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -29,7 +30,9 @@ public class TorchflowerGlowMixin {
     )
 
     private static Block.Settings alterTorchflowerSettings(AbstractBlock.Settings settings) {
-        return settings.luminance(state -> 15);
+        if (ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableTorchflowerGlow) {
+            return settings.luminance(state -> 15);
+        } return settings;
     }
 
     //Torchflower crops have a light level of 5
@@ -49,11 +52,13 @@ public class TorchflowerGlowMixin {
     )
 
     private static Block.Settings alterTorchflowerCropSettings(AbstractBlock.Settings settings) {
-        return settings.luminance(state -> switch (state.get(TorchflowerBlock.AGE)) {
-            case 0 -> 5;
-            case 1 -> 10;
-            default -> 15;
-        });
+        if (ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableTorchflowerGlow) {
+            return settings.luminance(state -> switch (state.get(TorchflowerBlock.AGE)) {
+                case 0 -> 5;
+                case 1 -> 10;
+                default -> 15;
+            });
+        } return settings;
     }
 
    //Torchflowers in pots have a light level of 13
@@ -67,9 +72,8 @@ public class TorchflowerGlowMixin {
     )
 
     private static Block.Settings alterTorchflowerPotSettings(AbstractBlock.Settings settings, Block flower) {
-        if (flower == TORCHFLOWER) {
+        if (ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableTorchflowerGlow && flower == TORCHFLOWER) {
             return settings.luminance(state -> 13);
-        };
-        return settings;
+        } return settings;
     }
 }

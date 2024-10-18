@@ -1,5 +1,6 @@
-package com.juicey.juiceytweaks.mixin;
+package com.juiceybeans.juiceytweaks.mixin;
 
+import com.juiceybeans.juiceytweaks.config.ModConfig;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,6 +28,8 @@ public class BlazeRodMixin {
     )
 
     private static Item.Settings add(Item.Settings settings) {
-        return settings.fireproof();
+        if (ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableFireResistantBlazeRod) {
+            return settings.fireproof();
+        } else return settings;
     }
 }

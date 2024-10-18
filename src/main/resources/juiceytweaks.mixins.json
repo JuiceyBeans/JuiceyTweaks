@@ -1,8 +1,7 @@
 {
   "required": true,
-  "package": "com.juicey.juiceytweaks.mixin",
+  "package": "com.juiceybeans.juiceytweaks.mixin",
   "compatibilityLevel": "JAVA_17",
-  "plugin": "com.juicey.juiceytweaks.mixin.MixinPlugin",
   "mixins": [
     "TorchflowerGlowMixin",
     "SnowballFreezingMixin",
@@ -12,7 +11,9 @@
     "SculkShriekerMixin",
     "SculkVeinMixin",
     "SculkCalibratedMixin",
-    "PowderSnowMixin"
+    "PowderSnowMixin",
+    "BlazePowderMixin",
+    "BlazeRodMixin"
   ],
   "injectors": {
     "defaultRequire": 1
