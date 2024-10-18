@@ -1,4 +1,4 @@
-package com.juicey.juiceytweaks.mixin;
+package com.juiceybeans.juiceytweaks.mixin;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;

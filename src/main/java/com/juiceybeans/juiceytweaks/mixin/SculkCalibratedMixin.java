@@ -1,6 +1,6 @@
-package com.juicey.juiceytweaks.mixin;
+package com.juiceybeans.juiceytweaks.mixin;
 
-import com.juicey.juiceytweaks.JuiceyTweaks;
+import com.juiceybeans.juiceytweaks.integration.VisualityIntegration;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.*;
 import net.minecraft.particle.ParticleTypes;
@@ -34,7 +34,7 @@ public abstract class SculkCalibratedMixin extends SculkSensorBlock {
                 world.addParticle(ParticleTypes.SCULK_CHARGE_POP, x + 0.5, y + 0.5, z + 0.5, 0, 0, 0);
             }
             if (random.nextFloat() > 0.95 && FabricLoader.getInstance().isModLoaded("visuality")) {
-                JuiceyTweaks.addVisualitySparkle(world, x + 0.5, y + 0.5, z + 0.5);
+                VisualityIntegration.addVisualitySparkle(world, x + 0.5, y + 0.5, z + 0.5);
             }
         }
 

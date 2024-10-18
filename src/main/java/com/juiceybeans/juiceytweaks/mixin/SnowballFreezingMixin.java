@@ -1,4 +1,4 @@
-package com.juicey.juiceytweaks.mixin;
+package com.juiceybeans.juiceytweaks.mixin;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

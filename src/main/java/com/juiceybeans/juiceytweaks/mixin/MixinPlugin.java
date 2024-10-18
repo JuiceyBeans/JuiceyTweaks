@@ -1,9 +1,8 @@
-package com.juicey.juiceytweaks.mixin;
+package com.juiceybeans.juiceytweaks.mixin;
 
-import com.juicey.juiceytweaks.JuiceyTweaks;
+import com.juiceybeans.juiceytweaks.JuiceyTweaks;
 import com.juicey.juiceytweaks.config.ModConfig;
 import net.fabricmc.loader.api.FabricLoader;
-import org.apache.logging.log4j.LogManager;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;

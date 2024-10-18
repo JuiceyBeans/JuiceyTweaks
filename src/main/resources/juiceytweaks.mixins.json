@@ -2,17 +2,17 @@
   "required": true,
   "package": "com.juicey.juiceytweaks.mixin",
   "compatibilityLevel": "JAVA_17",
-  "plugin": "com.juicey.juiceytweaks.mixin.MixinPlugin",
+  "plugin": "com.juiceybeans.juiceytweaks.mixin.MixinPlugin",
   "mixins": [
-    "TorchflowerGlowMixin",
-    "SnowballFreezingMixin",
-    "SculkMixin",
-    "SculkCatalystMixin",
-    "SculkSensorMixin",
-    "SculkShriekerMixin",
-    "SculkVeinMixin",
-    "SculkCalibratedMixin",
-    "PowderSnowMixin"
+    "com.juiceybeans.juiceytweaks.mixin.TorchflowerGlowMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SnowballFreezingMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SculkMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SculkCatalystMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SculkSensorMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SculkShriekerMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SculkVeinMixin",
+    "com.juiceybeans.juiceytweaks.mixin.SculkCalibratedMixin",
+    "com.juiceybeans.juiceytweaks.mixin.PowderSnowMixin"
   ],
   "injectors": {
     "defaultRequire": 1
