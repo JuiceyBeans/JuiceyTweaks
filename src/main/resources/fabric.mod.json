@@ -28,6 +28,10 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"visuality": "*"
+		"visuality": "*",
+		"modmenu": "*"
+	},
+	"conflicts": {
+		"glowing-torchflower": "*"
 	}
 }

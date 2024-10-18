@@ -11,6 +11,7 @@ base {
 }
 
 repositories {
+	maven { url 'https://maven.terraformersmc.com/releases/' } // Mod Menu
 	maven { url = "https://api.modrinth.com/maven" }
 	maven { url "https://www.cursemaven.com" }
 }
@@ -39,9 +40,14 @@ dependencies {
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "curse.maven:configuration-444699:${project.configuration_version}"
+
+	modApi("curse.maven:configuration-444699:${project.configuration_version}")
+
+	include "curse.maven:configuration-444699:${project.configuration_version}"
 
 	modCompileOnly "maven.modrinth:rI0hvYcd:${project.visuality_version}"
+
+	modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 }
 
 processResources {
