@@ -1,5 +1,6 @@
 package com.juiceybeans.juiceytweaks.mixin;
 
+import com.juiceybeans.juiceytweaks.config.ModConfig;
 import com.juiceybeans.juiceytweaks.integration.VisualityIntegration;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.*;
@@ -24,19 +25,20 @@ public abstract class SculkCalibratedMixin extends SculkSensorBlock {
 
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        super.randomDisplayTick(state, world, pos, random);
-        if(state.getBlock() instanceof CalibratedSculkSensorBlock && random.nextFloat() > 0.5) {
-            double x = pos.getX() + random.nextDouble();
-            double y = pos.getY() + random.nextDouble();
-            double z = pos.getZ() + random.nextDouble();
+        if (ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableSculkParticles) {
+            super.randomDisplayTick(state, world, pos, random);
+            if(state.getBlock() instanceof CalibratedSculkSensorBlock && random.nextFloat() > 0.5) {
+                double x = pos.getX() + random.nextDouble();
+                double y = pos.getY() + random.nextDouble();
+                double z = pos.getZ() + random.nextDouble();
 
-            if (random.nextFloat() > 0.85) {
-                world.addParticle(ParticleTypes.SCULK_CHARGE_POP, x + 0.5, y + 0.5, z + 0.5, 0, 0, 0);
-            }
-            if (random.nextFloat() > 0.95 && FabricLoader.getInstance().isModLoaded("visuality")) {
-                VisualityIntegration.addVisualitySparkle(world, x + 0.5, y + 0.5, z + 0.5);
+                if (random.nextFloat() > 0.85) {
+                    world.addParticle(ParticleTypes.SCULK_CHARGE_POP, x + 0.5, y + 0.5, z + 0.5, 0, 0, 0);
+                }
+                if (random.nextFloat() > 0.95 && FabricLoader.getInstance().isModLoaded("visuality")) {
+                    VisualityIntegration.addVisualitySparkle(world, x + 0.5, y + 0.5, z + 0.5);
+                }
             }
         }
-
     }
 }

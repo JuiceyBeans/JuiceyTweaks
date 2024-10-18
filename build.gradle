@@ -12,6 +12,7 @@ base {
 
 repositories {
 	maven { url = "https://api.modrinth.com/maven" }
+	maven { url "https://www.cursemaven.com" }
 }
 
 configurations.all {
@@ -38,6 +39,7 @@ dependencies {
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "curse.maven:configuration-444699:${project.configuration_version}"
 
 	modCompileOnly "maven.modrinth:rI0hvYcd:${project.visuality_version}"
 }

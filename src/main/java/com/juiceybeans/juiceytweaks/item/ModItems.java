@@ -32,7 +32,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        JuiceyTweaks.LOGGER.info("[Juicey's Tweaks] Registering items!");
+        JuiceyTweaks.LOGGER.info("Registered items!");
         addItemsToItemGroup();
     }
 }

@@ -1,4 +1,11 @@
 {
   "item.juiceytweaks.blank_smithing_template": "Blank Smithing Template",
-  "itemGroup.juiceytweaks.juicey_tweaks": "Juicey's Tweaks"
+  "itemGroup.juiceytweaks.juicey_tweaks": "Juicey's Tweaks",
+
+  "config.screen.juiceytweaks": "Juicey's Tweaks Config",
+  "config.juiceytweaks.option.enableTorchflowerGlow": "Enable glowing torchflowers",
+  "config.juiceytweaks.option.enableFreezingSnowballs": "Enable freezing snowballs",
+  "config.juiceytweaks.option.enableSculkParticles": "Enable sculk particles",
+  "config.juiceytweaks.option.enableFrostWalkerPowderedSnow": "Enable walking on powdered snow with Frost Walker boots",
+  "config.juiceytweaks.option.enableFireResistantBlazeRod": "Enable fire resistant blaze rods/powder"
 }

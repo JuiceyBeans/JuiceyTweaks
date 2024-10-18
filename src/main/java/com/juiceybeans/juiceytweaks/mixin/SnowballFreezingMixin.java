@@ -1,5 +1,6 @@
 package com.juiceybeans.juiceytweaks.mixin;
 
+import com.juiceybeans.juiceytweaks.config.ModConfig;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.projectile.thrown.SnowballEntity;
@@ -28,14 +29,16 @@ public abstract class SnowballFreezingMixin extends Entity {
 
     @Inject(method = "onEntityHit", at = @At(value = "TAIL"))
     private void setFreezing(EntityHitResult entityHitResult, CallbackInfo info) {
-        Entity entity = entityHitResult.getEntity();
-        entity.setFrozenTicks(300); //Gives freezing to the entity
-        //Extinguishes the entity if it is on fire
-        if (entity.wasOnFire) {
-            entity.playSound(SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE, 0.7F, 1.6F + (this.random.nextFloat() - this.random.nextFloat()) * 0.4F);;
-        }
-        if (entity.isOnFire()) {
-            entity.extinguishWithSound();
+        if (ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableFreezingSnowballs) {
+            Entity entity = entityHitResult.getEntity();
+            entity.setFrozenTicks(300);
+            if (entity.wasOnFire) {
+                entity.playSound(SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE, 0.7F, 1.6F + (this.random.nextFloat() - this.random.nextFloat()) * 0.4F);
+                ;
+            }
+            if (entity.isOnFire()) {
+                entity.extinguishWithSound();
+            }
         }
     }
 }

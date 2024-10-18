@@ -1,5 +1,6 @@
 package com.juiceybeans.juiceytweaks.mixin;
 
+import com.juiceybeans.juiceytweaks.config.ModConfig;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.block.PowderSnowBlock;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -23,8 +24,7 @@ public class PowderSnowMixin {
     }
 
     private static boolean powderSnowWalkCondition(Entity entity) {
-        if(EnchantmentHelper.getEquipmentLevel(Enchantments.FROST_WALKER, ((LivingEntity)entity)) > 0) {
-            return true;
-        } else return false;
+        return ModConfig.INSTANCE != null && ModConfig.INSTANCE.enableFrostWalkerPowderedSnow && EnchantmentHelper.getEquipmentLevel(
+                Enchantments.FROST_WALKER, ((LivingEntity) entity)) > 0;
     };
 }
